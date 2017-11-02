@@ -12,11 +12,10 @@
 
 % Set the header
 \ihead[]{\small EECS4312 Isolette Assignment}
-\title{EECS4312 Isolette Assignment}
 
 
 %%%%%%%%%%%%Enter your names here%%%%%%%%
-\author{\textbf{Juan Loja (lojag95\@cse.yorku.ca)}
+\author{\textbf{Juan Loja (lojag95@cse.yorku.ca)}
 \and \textbf{Sadman Sakib Hasan (cse23152@cse.yorku.ca)}
 }
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -24,8 +23,10 @@
 \date{\today} % Display a given date or no date
 
 \begin{document}
+\title{EECS4312 Isolette Assignment}
 \maketitle
-\noindent \textbf{Prism account used for submission}: \textbf{Prism account used}
+
+\noindent \textbf{Prism account used for submission}: cse23152@cse.yorku.ca
 
 \begin {mdframed}
 \textbf{\copyright This document is not for public distribution}. This document may only be used by EECS4312 students registered at York University. By downloading this document from the department, registered York students agree to keep this document (and all documents associated with assignments, projects or laboratories) private for their personal use, and may not communicate it to anyone else. 
@@ -33,14 +34,6 @@
 Students must obey York regulations on academic honesty requiring that students do the work of the Lab on their own, and not cheat by sharing with others or using and/or submitting the work of others. If you use \textit{github} or similar repository for your work,  the repository must be private. Placing your work in the public domain infringes on academic integrity. Github offers unlimited private repositories to students: \url{https://education.github.com/pack}.
 
 \end {mdframed}
-
-
-\begin{itemize}
-  \item You may work on your own or in a team of no more than two students. You must provide both names and Prism logins in the specified space above this.
-  \item \textbf{Submit only one document under one Prism account.}
-  \item Keep track of your revisions in the table below.
-\end{itemize}
-
 
 \newpage
 
@@ -156,8 +149,6 @@ The monitored variables are a subset of those described in \cite{REMH}.\footnote
 \newpage
 \section{Controlled Variables}
 
-\hl{Ensure that the table below is complete.}
-
 The controlled variables are a subset of those described in \cite{REMH}.\footnote{With some change of nomenclature. Controlled variables have a ``c'' prefix.} In addition, there is a mode display \cv{md} and a message display \cv{ms}.\footnote{The mode ``off'' is added to that of Fig.~A-4 in \cite{REMH}, and the mode transitions have been changed.}
 
 % Please add the following required packages to your document preamble:
@@ -171,7 +162,7 @@ The controlled variables are a subset of those described in \cite{REMH}.\footnot
 \cv{td}                      & $\intg$                      & $\{0\} \bunion \{68 \upto 105\}$                                         & $\degree{F}$                  & \begin{tabular}[c]{@{}l@{}}displayed temperature of Isolette\\ (zero when Isolette is off)\end{tabular} \\ \hline
 \cv{al}                      & Enumerated                   & \{off, on\}                                                              &                               & sound alarm to call nurse                                                                               \\ \hline
 \cv{md}                      & Enumerated                   & \begin{tabular}[c]{@{}l@{}}\{off, init, \\ normal, failed\}\end{tabular} &                               & \begin{tabular}[c]{@{}l@{}}mode of Isolette operation\\ (failed if $\mv{st} = invalid$)\end{tabular}    \\ \hline
-\cv{ms}                      & Enumerated                   &                                                                          &                               & messages to display to nurse                                                                            \\ \hline
+\cv{ms}                      & Enumerated                   &                               \begin{tabular}[c]{@{}l@{}}\{ok, too\_hot\_alarm, \\ too\_cool\_alarm, warming\_up, \\ cooling\_down, system\_error\}\end{tabular}                 & & messages to display to nurse                                                                            \\ \hline
 \end{tabular}
 \caption {Controlled Variables}
 \label{tbl:cv}
@@ -180,7 +171,14 @@ The controlled variables are a subset of those described in \cite{REMH}.\footnot
 \newpage
 \section{Mode Diagram}
 
+\begin{figure}[!htb]
+\begin{center}
 \includegraphics{images/mode-statechart.pdf}
+\end{center}
+\caption{Mode diagram for the states}
+\label{fig:mode}
+\end{figure}
+
 
 \textbf{Rationale: } NEED RATIONALE HERE
 
