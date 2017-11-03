@@ -296,16 +296,146 @@ The following are the environmental assumption made on the Isolette System:
 
 No abstract variables were used for the function tables.
 
-
+\newpage
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Function Tables}
 
-Starting on the next page, provide one function table for each control variable (in Table~\ref{tbl:cv}). Each control variable should have its own sub-section heading and its own page.
+Below are the function tables for each of the controlled variables:\\
+
+\subsection{Function Table for Mode Control: \cv{md}}
+
+\begin{table}[h]
+\centering
+\begin{tabular}{| c | c | c | c| c |}
+	\cline{5-5}
+	\multicolumn{4}{ c| }{ }& $c\_md(i)$  \\\hline
+	\multicolumn{4}{ |c| }{ $ i= 0$}& {\multirow{2}{*}{$off$}} \\ \cline{1-4}
+
+    {\multirow{9}{*}{$i>0$}}  & \multicolumn{3}{ c| }{ $m\_sw(i) = off$} & \\ \cline{2-5}
+          & {\multirow{7}{*}{$\neg(m\_sw(i) = off)$ }}&  \multicolumn{2}{ c| }{ $c\_md(i - 1) = off$ }   &  $init $\\ \cline{3-5}
+          & &  {\multirow{2}{*}{$c\_md(i - 1) = init$ }}                & $ S_{1}$ & $normal$ \\ \cline{4-5}
+	    & &                                                                         & $ \neg S_{1}$ &  $c\_md(i-1)$   \\ \cline{3-5}
+	    & &   {\multirow{2}{*}{$c\_md(i - 1) = normal$ }}       & $m\_st(i)=invalid$ & $fail$ \\ \cline{4-5}
+	    & &                                                                          & $m\_st(i)=valid$ & {\multirow{2}{*}{$c\_md(i-1)$}}  \\ \cline{3-4}
+         & &  {\multirow{2}{*}{$c\_md(i - 1) = fail$ }}             & $m\_st(i)=invalid$ &   \\ \cline{4-5}
+	    & &               & $m\_st(i)=valid$  & $normal$  \\ \hline
+\end{tabular}
+\caption {Function Table for Mode Control}
+\label{tbl:cv}
+\end{table}
+
+\begin{table}[h]
+\subparagraph{}
+\centering
+\begin{tabular}{| c | l | l |}
+	\hline
+     {\multirow{3}{*}{$S_{1}$ }} & $m\_st(i)=valid \land $  & This is the condition \\ 
+	                                          & $m\_dl(i)\leq m\_tm(i)\leq m\_dh(i) \land $  & to be met for system to go \\ 
+	                                          & $m\_al(i) < m\_dl(i) < m\_dh(i) < m\_ah(i) $  & from $init$ to $normal$\\ \hline
+\end{tabular} 
+\caption {Definition of $S_1$}
+\label{tbl:cv}
+\end{table}
+
 
 \newpage
-\subsection{Function Table for heat control: \cv{hc}}
+\subsection{Function Table for Heat Control: \cv{hc}}
 
-\hl{Function table goes here on this page. Other function tables each on their own page}
+\begin{table}[h]
+\centering
+\begin{tabular}{| c | c | c | p{4.5cm} | c |}
+	\cline{5-5}
+	\multicolumn{4}{ c| }{ }& $c\_hc(i)$  \\\hline
+	\multicolumn{4}{ |c| }{ $ i= 0$}& {\multirow{2}{*}{$off$}} \\ \cline{1-4}
+
+    {\multirow{5}{*}{$i>0$}}  & \multicolumn{3}{ c| }{ $m\_sw(i) = off$} & \\ \cline{2-5}
+          & {\multirow{4}{*}{$\neg(m\_sw(i) = off)$ }}&  \multicolumn{2}{ c| }{ $ \neg(m\_dl(i) < m\_dh(i))$ }   &  $c\_hc(i-1) $\\ \cline{3-5}
+          & &  {\multirow{3}{*}{$ m\_dl(i) < m\_dh(i)$ }}                & $ m\_tm(i) < m\_dl(i)$ & $on$ \\ \cline{4-5}
+	    & &                                                                                        & $ m\_dl(i) <= m\_tm(i) \land m\_tm(i) <= m\_dh(i) $ &  $c\_hc(i - 1)$   \\ \cline{4-5}
+	    & &                                                                                        & $ m\_tm(i) > m\_dh(i)$ &  $off$   \\ \hline
+\end{tabular}
+\caption {Function Table for Heat Control}
+\label{tbl:cv}
+\end{table}
+
+
+\newpage
+\subsection{Function Table for Tempearature Display Control: \cv{td}}
+\begin{table}[h]
+\centering
+\begin{tabular}{| c | c | c |}
+	\cline{3-3}
+	\multicolumn{2}{ c| }{ }& $c\_td(i)$  \\\hline
+	\multicolumn{2}{ |c| }{ $ i= 0$} & {\multirow{2}{*}{$0$}} \\ \cline{1-2}
+    {\multirow{2}{*}{$i>0$}}  & $c\_md(i - 1) = off \lor c\_md(i - 1) = fail $ & \\ \cline{2-3}
+           & $c\_md(i - 1) = init \lor c\_md(i - 1) = normal$ & $ floor(m\_tm(i) + 0.5)$  \\ \hline
+     
+\end{tabular}
+\caption {Function Table for Temperature Display Control}
+\label{tbl:cv}
+\end{table}
+
+\newpage
+\subsection{Function Table for Message Display Control: \cv{ms}}
+\begin{table}[h]
+\centering
+\begin{tabular}{| c | c | }
+	\cline{2-2}
+	\multicolumn{1}{ c| }{ }& $c\_ms(i)$ \\ \hline
+	$m\_st(i) = invalid $      &  $system\_error$ \\ \hline
+	$m\_tm(i) > m\_ah(i) $  &  $too\_hot\_alarm$  \\ \hline
+	$m\_tm(i) < m\_al(i) $   &   $too\_cool\_alarm$ \\ \hline
+	$m\_al(i) < m\_tm(i) < m\_dl(i) $ & $warming\_up$ \\ \hline
+	$m\_dh(i) < m\_tm(i) < m\_ah(i) $ & $cooling\_down$ \\ \hline
+     $ELSE $ & $ok$ \\ \hline
+\end{tabular}
+\caption {Function Table for Message Display Control}
+\label{tbl:cv}
+\end{table}
+
+\newpage
+\subsection{Function Table for Alarm Control: \cv{al}}
+\begin{table}[h]
+\centering
+\begin{tabular}{| c | c | c | c | c | c | c | c |}
+	\cline {8-8}
+
+	\multicolumn{7}{ c| }{ }  & $c\_al(i)$ \\ \hline
+
+	\multicolumn{7}{|c| }{$i=0$ } & {\multirow{2}{*}{$off$}} \\ \cline{1-7}
+	{\multirow{7}{*}{$i>0$}} & \multicolumn{6}{ c| }{$S_2$} &  \\ \cline{2-8}
+	  & {\multirow{6}{*}{$\neg S_2$}} & \multicolumn{5}{ c| }{ $S_3$} & $c\_al(i - 1)$ \\ \cline{3-8}
+	  &   &  {\multirow{5}{*}{$\neg S_3$}} & \multicolumn{4}{ c| }{$S_4$} &  $on$ \\ \cline{4-8}
+	  &   &   & {\multirow{4}{*}{$\neg S_4$}} & \multicolumn{3}{ c| }{$c\_al(i - 1) = off$} & $c\_al(i - 1)$ \\ \cline{5-8}
+	  &   &   &   & {\multirow{3}{*}{$c\_al(i - 1) = on$}} & \multicolumn{2}{ c| }{$S_5$} & {\multirow{2}{*}{$off$}} \\ \cline{6-7}
+	  &   &   &   &   & {\multirow{2}{*}{$\neg S_5$}} & $m\_sw(i) = off$ & \\ \cline{7-8}
+	  &   &   &   &   &   & $m\_sw(i) = on$ & $on$  \\ \hline
+
+\end{tabular}
+\caption {Function Table for Alarm Control}
+\label{tbl:cv}
+\end{table}
+
+\begin{table}[h]
+\subparagraph{}
+\centering
+\begin{tabular}{| c | l | l |}
+	\hline
+	{\multirow{2}{*}{$S_2$ }}  & $c\_md(i - 1) = off \lor c\_md(i - 1) = init$  &  Mode is $off$ or $init$.  \\
+								  & &Else it is in $normal$ or $fail$ mode.  \\  \hline
+     {\multirow{2}{*}{$S_3$ }} & $(m\_al(i) <= m\_tm(i) \land m\_tm(i) < m\_al(i) + 0.5) \lor$  &  This is the  \\ 
+	                                        & $ (m\_ah(i) - 0.5 <= m\_tm(i) \land m\_tm(i) <= m\_ah(i))$  &  Hysteresis Region. \\ \hline
+
+	{\multirow{2}{*}{$S_4$ }}  & $ m\_tm(i) > m\_ah(i)  \lor m\_tm(i) < m\_al(i) \lor$  &  Conditions for  \\ 
+	                                        & $ m\_st(i) = invalid$  &when the alarm is on.  \\ \hline
+
+	{\multirow{2}{*}{$S_5$ }}  & $held\_for(alarm, 10)(i - 1)$ &  Checks if alarm was  \\ 
+	                                        & & on for at least 10 seconds.  \\ \hline
+\end{tabular} 
+\caption {Definitions for $S_2$, $S_3$, $S_4$ and $S_5$}
+\label{tbl:cv}
+\end{table}
+%% \hl{Function table goes here on this page. Other function tables each on their own page}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \newpage
