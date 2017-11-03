@@ -1,1 +1,8 @@
 pvs/orphaned-proofs.prf
+Latex/*.aux
+Latex/*.lof
+Latex/*.log
+Latex/*.lot
+Latex/*.out
+Latex/*.gz
+Latex/*.bak
