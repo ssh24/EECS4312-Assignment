@@ -179,9 +179,9 @@ The controlled variables are a subset of those described in \cite{REMH}.\footnot
 \label{fig:mode}
 \end{figure}
 
-
 \smallskip
 \noindent \textbf{Rationale}: A mode diagram denotes the possible states the system can be in. They are \emph{abstract} variables whose output are visible to the client, in this case the nurse. In a particular state, the \emph{guard} condition has to be satisfied in order for the mode to change.
+
 
 %% Deactivate this to place your own work
 %\input{sty/sample.tex}
@@ -189,12 +189,21 @@ The controlled variables are a subset of those described in \cite{REMH}.\footnot
 \newpage
 \section{R-Descriptions}
 
-We have already elicited the following R-descriptions.
+The following are the R-descriptions for the System Under Description.
 
 \rdescription
 {The \emph{controller} shall operate in one of four modes: \emph{off}, \emph{init}, \emph{normal} and \emph{fail}.\\}
-{See statechart in Fig.~\ref{fig:sc}.}
+{See statechart in Fig.~\ref{fig:mode}.}
 \label{R1}
+
+\smallskip
+\noindent \textbf{Rationale}: The Isolette can show four statuses to the Nurse.
+\begin{mylist}
+\item \emph{off} mode indicates that the Isolette is switched off. If the Isolette gets switched on, move to the \emph{init} state.
+\item \emph{init} mode indicates that the Isolette has just been switched on and the temperature sensor is still not in the desired range. If the input from the nurse is valid and the temperatures are in their desired ranges then move to the \emph{normal} state.
+\item \emph{normal} mode indicates everything is under control (i.e all inputs are correct and the sensors are working fine). If something goes wrong, then move on to the \emph{fail} state.
+\item \emph{fail} mode indicates something went wrong and sound an alarm. The nurse can either then turn the Isolette off to go to the \emph{off} state or fix the input temperature ranges to go back to the \emph{normal} state.
+\end{mylist} 
 
 \rdescription
 {In the \emph{normal} mode, the temperature controller shall maintain current temperature inside the Isolette within a set temperature range (the \emph{desired} range).\\}
@@ -223,10 +232,12 @@ The following relevant hazard was identified through the safety assessment proce
 {The alarm temperature range is $\mv{al}\upto\mv{ah}$.
 
 Monitored variable \mv{st} 
-%in Table~\ref{fig:mv} 
+in Table~\ref{table:monitored} 
 shows ``invalid'' when any of the input signals fail.}
 \label{R3}
 
+\smallskip
+\noindent \textbf{Rationale}: The alarm needs to go off to alert the nurse during critical situations. Most importantly, in the \emph{normal} mode since that is when the child is first put into the Isolette. It must be ensured that the Isolette is capable of handling the child and in any case when it cannot, an alarm must go off to notify the nurse.
 
 \rdescription
 {Once the alarm is activated, it becomes deactivated in one of two ways:
@@ -234,30 +245,56 @@ shows ``invalid'' when any of the input signals fail.}
 \item The nurse turns off the Isolette;
 \item The alarm has lasted for 10 seconds, and after 10 seconds or more the alarm conditions are removed.
 \end{mylist}~\\}
-{\hl{Refer to the relevant tables of monitored and/or controlled variables and function tables.}}
+{The Isolette can be switched off by setting \emph{m\_sw} to off. The alarm condition can be removed when the alarm \emph{c\_hc} has been activated for more than 10 seconds. Refer to Table ~\ref{tbl:al} and ~\ref{tbl:cv}.}
 \label{R4}
 
+\smallskip
+\noindent \textbf{Rationale}: The Alarm Temperature Range will be set by the Nurse based on the Infant’s weight and health. Once the alarm is activated (i.e the temperature falls beyond the range), the Infant should be removed from the Isolette and the Isolette should be turned off. If the nurse fails to accomplish that within 10 seconds, the alarm gets deactivated with the infant inside.
 
-On the next page, you must add the next three most important R-Descriptions. Provide a brief rationale for each R-Description. Include any remaining R-Descriptions in an appendix to this document. 
+\rdescription
+{If mode is \emph{normal} and the value of the Current Temperature is greater than or equal to the Lower Alarm Ttemperature +0.5° and less than or equal to the Upper Alarm Temperature -0.5°, the alarm shall be set to \emph{off}.}
+{When the current temperature is between +/-0.5 of the alarm temperature range, $m\_al+0.5 <= m\_tm <= m\_ah - 0.5$ then \emph{c\_al} should be set to off. Refer to Table ~\ref{tbl:al} and ~\ref{tbl:cv}.}
+\label{R5}
 
-\newpage
-\hl{Additional three R-Descriptions with brief rational (one page)}
+\smallskip
+\noindent \textbf{Rationale}: The alarm should be turned off at the same moment that the Displayed Temperature shows a value greater than the Lower Alarm Temperature and less than the Upper Alarm Temperature.
+
+\rdescription
+{The Thermostat shall set the value of the Heat Control depending on the Current Temperature.}
+{The heat control of the Isolette is the control variable \emph{c\_hc}. Refer to Table ~\ref{tbl:hc} and ~\ref{tbl:cv}.}
+\label{R6}
+
+\smallskip
+\noindent \textbf{Rationale}: The controlled variable \emph{c\_hc} is used by the thermostat to turn the Heat Control on and off to maintain the Current Temperature in the Isolette within the Desired Temperature Range, i.e within \emph{m\_dl} and \emph{m\_dh}. If the Current Temperature is below the Desired Low Temperature, the heat control should be set on. If the Current Temperature is above the Desired High Temperature, the heat control should be set off.
+
+\rdescription
+{In the \emph{init} and \emph{normal} modes, the displayed temperature shall be set to the value of the current temperature rounded to the nearest integer.}
+{The displayed temperature of the Isolette is the control variable \emph{c\_td}. Refer to Table ~\ref{tbl:td} and ~\ref{tbl:cv}.} %~\ref{}}
+\label{R7}
+
+\smallskip
+\noindent \textbf{Rationale}: The controlled variable \emph{c\_td} is used by the thermostat to show the Current Temperature of the Isolette. The Displayed Temperature is calculated using the mathematical floor function of the Current Temperature to avoid showing invalid temperatures to the nurse.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \newpage
 \section{E-descriptions}
+
+The following are the environmental assumption made on the Isolette System:
+
 \edescription
 {The current temperature received from the sensor is a a real number in the range $68.0$ to $105.0 \degree{F}$.\\}
 {The monitored variable \emph{m\_tm} in Table ~\ref{table:monitored} specifies the range, type and unit for the Current Temperature received from the sensor.}
 \label{E1}
 
-\noindent \textbf{Rationale}: This is the specified range of operation of the Isolette. The lower end of this range is useful for monitoring an Isolette that is warming to the Desired Temperature Range. The upper end is set to be greater than the maximum Higher Alarm Temperature.
+\smallskip
+\noindent \textbf{Rationale}: This is the specified range of operation of the Isolette. The lower end of this range is useful for monitoring an Isolette that is warming to the Desired Temperature Range. The upper end is set to be greater than the Higher Alarm Temperature.
 
 \edescription
 {The desired and alarm temperatures received from the operator are all in increments of $1 \degree{F}$.\\}
-{The monitored variables \emph{m\_tm}, \emph{m\_dl}, \emph{m\_dh}, \emph{m\_al} are \emph{m\_ah} set in an increment of $1 \degree{F}$. Refer to table ~\ref{table:monitored} to see details about the monitored inputs.}
+{The monitored variables \emph{m\_tm}, \emph{m\_dl}, \emph{m\_dh}, \emph{m\_al} and \emph{m\_ah} set in an increment of $1 \degree{F}$. Refer to table ~\ref{table:monitored} to see details about the monitored inputs.}
 \label{E2}
 
+\smallskip
 \noindent \textbf{Rationale}: Marketing studies have shown that customers prefer to set temperatures in 1 degree increments. A resolution 1°F is sufficient to be consistent with the functionality and performance for the Isolette.
 
 \edescription
@@ -265,6 +302,7 @@ On the next page, you must add the next three most important R-Descriptions. Pro
 {The monitored variables \emph{m\_al} denotes the Lower Alarm Temperature. Table ~\ref{table:monitored} specifies the range, type and unit for the Lower Alarm Temperature set by the Nurse.}
 \label{E3}
 
+\smallskip
 \noindent \textbf{Rationale}: Exposure to temperatures less than $93\degree{F}$ will result in hypothermia, which can lead to death within a few minutes for severely ill pre-term infants.
 
 \edescription
@@ -272,6 +310,7 @@ On the next page, you must add the next three most important R-Descriptions. Pro
 {The monitored variables \emph{m\_ah} denotes the Higher Alarm Temperature. Table ~\ref{table:monitored} specifies the range, type and unit for the Higher Alarm Temperature set by the Nurse.}
 \label{E4}
 
+\smallskip
 \noindent \textbf{Rationale}: Exposure to temperatures greater than $103\degree{F}$ will result in hyperthermia, which can lead to cardiac arrhythmias and febrile seizures within a few minutes.
 
 \edescription
@@ -279,6 +318,7 @@ On the next page, you must add the next three most important R-Descriptions. Pro
 {The monitored variables \emph{m\_dh} denotes the Lower Desired Temperature. Table ~\ref{table:monitored} specifies the range, type and unit for the Lower Desired Temperature set by the Nurse.}
 \label{E5}
 
+\smallskip
 \noindent \textbf{Rationale}: Exposing the Infant to temperatures lower than $97\degree{F}$ may result in excessive heat loss and drop in heart rate secondary to metabolic acidosis.
 
 
@@ -301,19 +341,19 @@ Below are the function tables for each of the controlled variables:\\
 \begin{tabular}{| c | c | c | c| c |}
 	\cline{5-5}
 	\multicolumn{4}{ c| }{ }& $c\_md(i)$  \\\hline
-	\multicolumn{4}{ |c| }{ $ i= 0$}&$off$ \\ \hline
+	\multicolumn{4}{ |c| }{ $ i= 0$}& {\multirow{2}{*}{$off$}} \\ \cline{1-4}
 
-    {\multirow{9}{*}{$i>0$}}  & \multicolumn{3}{ c| }{ $m\_sw(i) = off$} & $off$\\ \cline{2-5}
+    {\multirow{9}{*}{$i>0$}}  & \multicolumn{3}{ c| }{ $m\_sw(i) = off$} & \\ \cline{2-5}
           & {\multirow{7}{*}{$\neg(m\_sw(i) = off)$ }}&  \multicolumn{2}{ c| }{ $c\_md(i - 1) = off$ }   &  $init $\\ \cline{3-5}
           & &  {\multirow{2}{*}{$c\_md(i - 1) = init$ }}                & $ S_{1}$ & $normal$ \\ \cline{4-5}
 	    & &                                                                         & $ \neg S_{1}$ &  $c\_md(i-1)$   \\ \cline{3-5}
 	    & &   {\multirow{2}{*}{$c\_md(i - 1) = normal$ }}       & $m\_st(i)=invalid$ & $fail$ \\ \cline{4-5}
-	    & &                                                                          & $m\_st(i)=valid$ & $c\_md(i-1)$  \\ \cline{3-5}
-         & &  {\multirow{2}{*}{$c\_md(i - 1) = fail$ }}             & $m\_st(i)=invalid$ & $c\_md(i-1)$  \\ \cline{4-5}
+	    & &                                                                          & $m\_st(i)=valid$ & {\multirow{2}{*}{$c\_md(i-1)$}}  \\ \cline{3-4}
+         & &  {\multirow{2}{*}{$c\_md(i - 1) = fail$ }}             & $m\_st(i)=invalid$ &   \\ \cline{4-5}
 	    & &               & $m\_st(i)=valid$  & $normal$  \\ \hline
 \end{tabular}
 \caption {Function Table for Mode Control}
-\label{tbl:cv}
+\label{tbl:cmd}
 \end{table}
 
 \begin{table}[h]
@@ -326,7 +366,7 @@ Below are the function tables for each of the controlled variables:\\
 	                                          & $m\_al(i) < m\_dl(i) < m\_dh(i) < m\_ah(i) $  & from $init$ to $normal$\\ \hline
 \end{tabular} 
 \caption {Definition of $S_1$}
-\label{tbl:cv}
+\label{tbl:cmd1}
 \end{table}
 
 
@@ -338,16 +378,16 @@ Below are the function tables for each of the controlled variables:\\
 \begin{tabular}{| c | c | c | p{4.5cm} | c |}
 	\cline{5-5}
 	\multicolumn{4}{ c| }{ }& $c\_hc(i)$  \\\hline
-	\multicolumn{4}{ |c| }{ $ i= 0$}&$off$ \\ \hline
+	\multicolumn{4}{ |c| }{ $ i= 0$}& {\multirow{2}{*}{$off$}} \\ \cline{1-4}
 
-    {\multirow{5}{*}{$i>0$}}  & \multicolumn{3}{ c| }{ $m\_sw(i) = off$} & $off$\\ \cline{2-5}
-          & {\multirow{4}{*}{$m\_sw(i) = on$ }}&  \multicolumn{2}{ |c| }{ $ \neg(m\_dl(i) < m\_dh(i))$ }   &  $c\_hc(i-1) $\\ \cline{3-5}
+    {\multirow{5}{*}{$i>0$}}  & \multicolumn{3}{ c| }{ $m\_sw(i) = off$} & \\ \cline{2-5}
+          & {\multirow{4}{*}{$\neg(m\_sw(i) = off)$ }}&  \multicolumn{2}{ c| }{ $ \neg(m\_dl(i) < m\_dh(i))$ }   &  $c\_hc(i-1) $\\ \cline{3-5}
           & &  {\multirow{3}{*}{$ m\_dl(i) < m\_dh(i)$ }}                & $ m\_tm(i) < m\_dl(i)$ & $on$ \\ \cline{4-5}
 	    & &                                                                                        & $ m\_dl(i) <= m\_tm(i) \land m\_tm(i) <= m\_dh(i) $ &  $c\_hc(i - 1)$   \\ \cline{4-5}
 	    & &                                                                                        & $ m\_tm(i) > m\_dh(i)$ &  $off$   \\ \hline
 \end{tabular}
 \caption {Function Table for Heat Control}
-\label{tbl:cv}
+\label{tbl:hc}
 \end{table}
 
 
@@ -364,7 +404,7 @@ Below are the function tables for each of the controlled variables:\\
      
 \end{tabular}
 \caption {Function Table for Temperature Display Control}
-\label{tbl:cv}
+\label{tbl:td}
 \end{table}
 
 \newpage
@@ -382,7 +422,7 @@ Below are the function tables for each of the controlled variables:\\
      $ELSE $ & $ok$ \\ \hline
 \end{tabular}
 \caption {Function Table for Message Display Control}
-\label{tbl:cv}
+\label{tbl:ms}
 \end{table}
 
 \newpage
@@ -394,18 +434,18 @@ Below are the function tables for each of the controlled variables:\\
 
 	\multicolumn{7}{ c| }{ }  & $c\_al(i)$ \\ \hline
 
-	\multicolumn{7}{|c| }{$i=0$ } & $off$ \\ \hline
-	{\multirow{7}{*}{$i>0$}} & \multicolumn{6}{ c| }{$S_2$} & $off$ \\ \cline{2-8}
+	\multicolumn{7}{|c| }{$i=0$ } & {\multirow{2}{*}{$off$}} \\ \cline{1-7}
+	{\multirow{7}{*}{$i>0$}} & \multicolumn{6}{ c| }{$S_2$} &  \\ \cline{2-8}
 	  & {\multirow{6}{*}{$\neg S_2$}} & \multicolumn{5}{ c| }{ $S_3$} & $c\_al(i - 1)$ \\ \cline{3-8}
 	  &   &  {\multirow{5}{*}{$\neg S_3$}} & \multicolumn{4}{ c| }{$S_4$} &  $on$ \\ \cline{4-8}
 	  &   &   & {\multirow{4}{*}{$\neg S_4$}} & \multicolumn{3}{ c| }{$c\_al(i - 1) = off$} & $c\_al(i - 1)$ \\ \cline{5-8}
-	  &   &   &   & {\multirow{3}{*}{$c\_al(i - 1) = on$}} & \multicolumn{2}{ c| }{$S_5$} & $off$ \\ \cline{6-8}
-	  &   &   &   &   & {\multirow{2}{*}{$\neg S_5$}} & $m\_sw(i) = off$ & $off$\\ \cline{7-8}
+	  &   &   &   & {\multirow{3}{*}{$c\_al(i - 1) = on$}} & \multicolumn{2}{ c| }{$S_5$} & {\multirow{2}{*}{$off$}} \\ \cline{6-7}
+	  &   &   &   &   & {\multirow{2}{*}{$\neg S_5$}} & $m\_sw(i) = off$ & \\ \cline{7-8}
 	  &   &   &   &   &   & $m\_sw(i) = on$ & $on$  \\ \hline
 
 \end{tabular}
 \caption {Function Table for Alarm Control}
-\label{tbl:cv}
+\label{tbl:al}
 \end{table}
 
 \begin{table}[h]
@@ -425,7 +465,7 @@ Below are the function tables for each of the controlled variables:\\
 	                                        & & on for at least 10 seconds.  \\ \hline
 \end{tabular} 
 \caption {Definitions for $S_2$, $S_3$, $S_4$ and $S_5$}
-\label{tbl:cv}
+\label{tbl:al1}
 \end{table}
 %% \hl{Function table goes here on this page. Other function tables each on their own page}
 

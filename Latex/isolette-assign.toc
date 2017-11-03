@@ -5,29 +5,17 @@
 \contentsline {section}{\numberline {5}Controlled Variables}{9}{section.5}
 \contentsline {section}{\numberline {6}Mode Diagram}{10}{section.6}
 \contentsline {section}{\numberline {7}R-Descriptions}{11}{section.7}
-\contentsline {section}{\numberline {8}E-descriptions}{14}{section.8}
-<<<<<<< HEAD
-\contentsline {section}{\numberline {9}Abstract variables needed for the Function Table}{16}{section.9}
-\contentsline {section}{\numberline {10}Function Tables}{16}{section.10}
-\contentsline {subsection}{\numberline {10.1}Function Table for heat control: \textit {c\_hc}}{17}{subsection.10.1}
-\contentsline {section}{\numberline {11}Validation}{18}{section.11}
-\contentsline {section}{\numberline {12}Use Cases}{19}{section.12}
-\contentsline {section}{\numberline {13}Acceptance Tests}{20}{section.13}
-\contentsline {section}{\numberline {14}Traceability}{21}{section.14}
-\contentsline {section}{\numberline {15}Glossary}{21}{section.15}
-\contentsline {section}{\numberline {A}Appendix Title??}{22}{appendix.A}
-=======
-\contentsline {section}{\numberline {9}Abstract variables needed for the Function Table}{15}{section.9}
-\contentsline {section}{\numberline {10}Function Tables}{16}{section.10}
-\contentsline {subsection}{\numberline {10.1}Function Table for Mode Control: \textit {c\_md}}{16}{subsection.10.1}
-\contentsline {subsection}{\numberline {10.2}Function Table for Heat Control: \textit {c\_hc}}{17}{subsection.10.2}
-\contentsline {subsection}{\numberline {10.3}Function Table for Tempearature Display Control: \textit {c\_td}}{18}{subsection.10.3}
-\contentsline {subsection}{\numberline {10.4}Function Table for Message Display Control: \textit {c\_ms}}{19}{subsection.10.4}
-\contentsline {subsection}{\numberline {10.5}Function Table for Alarm Control: \textit {c\_al}}{20}{subsection.10.5}
-\contentsline {section}{\numberline {11}Validation}{21}{section.11}
-\contentsline {section}{\numberline {12}Use Cases}{22}{section.12}
-\contentsline {section}{\numberline {13}Acceptance Tests}{23}{section.13}
-\contentsline {section}{\numberline {14}Traceability}{24}{section.14}
-\contentsline {section}{\numberline {15}Glossary}{24}{section.15}
-\contentsline {section}{\numberline {A}Appendix Title??}{25}{appendix.A}
->>>>>>> 52ab791... Apply small changes to be consistent w/ code
+\contentsline {section}{\numberline {8}E-descriptions}{15}{section.8}
+\contentsline {section}{\numberline {9}Abstract variables needed for the Function Table}{17}{section.9}
+\contentsline {section}{\numberline {10}Function Tables}{18}{section.10}
+\contentsline {subsection}{\numberline {10.1}Function Table for Mode Control: \textit {c\_md}}{18}{subsection.10.1}
+\contentsline {subsection}{\numberline {10.2}Function Table for Heat Control: \textit {c\_hc}}{19}{subsection.10.2}
+\contentsline {subsection}{\numberline {10.3}Function Table for Tempearature Display Control: \textit {c\_td}}{20}{subsection.10.3}
+\contentsline {subsection}{\numberline {10.4}Function Table for Message Display Control: \textit {c\_ms}}{21}{subsection.10.4}
+\contentsline {subsection}{\numberline {10.5}Function Table for Alarm Control: \textit {c\_al}}{22}{subsection.10.5}
+\contentsline {section}{\numberline {11}Validation}{23}{section.11}
+\contentsline {section}{\numberline {12}Use Cases}{24}{section.12}
+\contentsline {section}{\numberline {13}Acceptance Tests}{25}{section.13}
+\contentsline {section}{\numberline {14}Traceability}{26}{section.14}
+\contentsline {section}{\numberline {15}Glossary}{26}{section.15}
+\contentsline {section}{\numberline {A}Appendix Title??}{27}{appendix.A}
