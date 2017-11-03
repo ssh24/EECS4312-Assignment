@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2016.2.3)  4 NOV 2017 19:25
+=======
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2016.2.3)  4 NOV 2017 22:37
+>>>>>>> 52ab791... Apply small changes to be consistent w/ code
 entering extended mode
 **./isolette-assign.tex
 (isolette-assign.tex
@@ -1108,7 +1112,29 @@ Package caption Info: KOMA-Script document class.
 \c@ContinuedFloat=\count183
 Package caption Info: hyperref package is loaded.
 Package caption Info: listings package is loaded.
-) (isolette-assign.aux)
+) (isolette-assign.aux
+
+LaTeX Warning: Label `tbl:cv' multiply defined.
+
+
+LaTeX Warning: Label `tbl:cv' multiply defined.
+
+
+LaTeX Warning: Label `tbl:cv' multiply defined.
+
+
+LaTeX Warning: Label `tbl:cv' multiply defined.
+
+
+LaTeX Warning: Label `tbl:cv' multiply defined.
+
+
+LaTeX Warning: Label `tbl:cv' multiply defined.
+
+
+LaTeX Warning: Label `tbl:cv' multiply defined.
+
+)
 \openout1 = `isolette-assign.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 25.
@@ -1234,15 +1260,15 @@ isolette-assign.toc)
 \tf@toc=\write5
 \openout5 = `isolette-assign.toc'.
 
- (isolette-assign.lof
+ (isolette-assign.lof [3]
 
-LaTeX Warning: Citation `JM2007' on page 3 undefined on input line 2.
+LaTeX Warning: Citation `JM2007' on page 4 undefined on input line 2.
 
 )
 \tf@lof=\write6
 \openout6 = `isolette-assign.lof'.
 
- [3] (isolette-assign.lot)
+ (isolette-assign.lot)
 \tf@lot=\write7
 \openout7 = `isolette-assign.lot'.
 
@@ -1250,14 +1276,14 @@ LaTeX Warning: Citation `JM2007' on page 3 undefined on input line 2.
 
 LaTeX Warning: Citation `REMH' on page 5 undefined on input line 77.
 
-<images/isolette.png, id=137, 495.8525pt x 634.37pt>
+<images/isolette.png, id=173, 495.8525pt x 634.37pt>
 File: images/isolette.png Graphic file (type png)
  <use images/isolette.png>
 Package pdftex.def Info: images/isolette.png used on input line 81.
 (pdftex.def)             Requested size: 177.42868pt x 226.98882pt.
 
 [5 <./images/isolette.png>]
-<images/incubator.png, id=149, 1437.37pt x 714.67pt>
+<images/incubator.png, id=184, 1437.37pt x 714.67pt>
 File: images/incubator.png Graphic file (type png)
 
 <use images/incubator.png>
@@ -1273,7 +1299,7 @@ LaTeX Warning: Citation `JM2007' on page 6 undefined on input line 94.
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 103.
 [6 <./images/incubator.png>]
-<images/context-diagram.pdf, id=157, 614.295pt x 794.97pt>
+<images/context-diagram.pdf, id=192, 614.295pt x 794.97pt>
 File: images/context-diagram.pdf Graphic file (type pdf)
 
 <use images/context-diagram.pdf>
@@ -1298,7 +1324,7 @@ Overfull \hbox (54.8514pt too wide) in paragraph at lines 158--167
 [][] 
  []
 
-[9] <images/mode-statechart.pdf, id=196, 469.755pt x 287.0725pt>
+[9] <images/mode-statechart.pdf, id=230, 469.755pt x 287.0725pt>
 File: images/mode-statechart.pdf Graphic file (type pdf)
 
 <use images/mode-statechart.pdf>
@@ -1486,6 +1512,7 @@ Underfull \hbox (badness 2073) in paragraph at lines 286--286
 \OT1/cmr/m/n/10 the Lower De-sired
  []
 
+<<<<<<< HEAD
 [15] [16]
 
 LaTeX Font Warning: Font shape `OT1/cmss/bx/it' undefined
@@ -1508,8 +1535,51 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 364.
  (isolette-assign.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 364.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 364.
+=======
+[14] [15]
+Underfull \hbox (badness 10000) in paragraph at lines 270--271
+
+ []
+
+
+LaTeX Font Warning: Font shape `OT1/cmss/bx/it' undefined
+(Font)              using `OT1/cmss/bx/n' instead on input line 272.
+
+
+Overfull \hbox (10.42653pt too wide) in paragraph at lines 276--290
+ [][] 
+ []
+
+[16]
+Overfull \hbox (23.68083pt too wide) in paragraph at lines 313--324
+ [][] 
+ []
+
+[17] [18] [19]
+Overfull \hbox (52.49167pt too wide) in paragraph at lines 389--402
+ [] 
+ []
+
+[20] [21]
+
+LaTeX Warning: Citation `REMH' on page 22 undefined on input line 419.
+
+[22] [23]
+No file isolette-assign.bbl.
+[24] (lstlang0.sty)
+LaTeX Font Info:    Font shape `OT1/pcr/bx/n' in size <10.95> not available
+(Font)              Font shape `OT1/pcr/b/n' tried instead on input line 449.
+LaTeX Font Info:    Font shape `OT1/pcr/m/it' in size <10.95> not available
+(Font)              Font shape `OT1/pcr/m/sl' tried instead on input line 451.
+ [25]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 461.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 461.
+ (isolette-assign.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 461.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 461.
+>>>>>>> 52ab791... Apply small changes to be consistent w/ code
 Package rerunfilecheck Info: File `isolette-assign.out' has not changed.
-(rerunfilecheck)             Checksum: A0BD6DC1C7462F226C11E4D513F9A61C;931.
+(rerunfilecheck)             Checksum: 80A45BC1B79901A4B710D5B07AD0129B;1331.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
@@ -1517,15 +1587,26 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
 LaTeX Warning: There were undefined references.
 
+
+LaTeX Warning: There were multiply-defined labels.
+
  ) 
 Here is how much of TeX's memory you used:
+<<<<<<< HEAD
  29960 strings out of 493634
  571255 string characters out of 3132792
  708864 words of memory out of 3000000
  32828 multiletter control sequences out of 15000+200000
  21191 words of font info for 78 fonts, out of 3000000 for 9000
+=======
+ 29979 strings out of 493634
+ 571592 string characters out of 3132792
+ 709802 words of memory out of 3000000
+ 32834 multiletter control sequences out of 15000+200000
+ 22439 words of font info for 83 fonts, out of 3000000 for 9000
+>>>>>>> 52ab791... Apply small changes to be consistent w/ code
  1025 hyphenation exceptions out of 8191
- 81i,21n,75p,10444b,1104s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 81i,21n,75p,10444b,1105s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Users/SadmanSakib/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/fontn
 ame/8r.enc}<C:/Users/SadmanSakib/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/
 public/amsfonts/cm/cmbsy10.pfb><C:/Users/SadmanSakib/AppData/Local/Programs/MiK
@@ -1545,6 +1626,7 @@ ppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmss12.pfb><C:/
 Users/SadmanSakib/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts
 /cm/cmssbx10.pfb><C:/Users/SadmanSakib/AppData/Local/Programs/MiKTeX 2.9/fonts/
 type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/SadmanSakib/AppData/Local/Program
+<<<<<<< HEAD
 s/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Users/SadmanSakib/App
 Data/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Use
 rs/SadmanSakib/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm
@@ -1560,4 +1642,19 @@ PDF statistics:
  420 PDF objects out of 1000 (max. 8388607)
  74 named destinations out of 1000 (max. 500000)
  169 words of extra memory for PDF output out of 10000 (max. 10000000)
+=======
+s/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/SadmanSakib/App
+Data/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Us
+ers/SadmanSakib/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/c
+m/cmti12.pfb><C:/Users/SadmanSakib/AppData/Local/Programs/MiKTeX 2.9/fonts/type
+1/public/amsfonts/symbols/msbm10.pfb><C:/Users/SadmanSakib/AppData/Local/Progra
+ms/MiKTeX 2.9/fonts/type1/urw/courier/ucrb8a.pfb><C:/Users/SadmanSakib/AppData/
+Local/Programs/MiKTeX 2.9/fonts/type1/urw/courier/ucrr8a.pfb><C:/Users/SadmanSa
+kib/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/courier/ucrro8a.pfb>
+Output written on isolette-assign.pdf (25 pages, 1438468 bytes).
+PDF statistics:
+ 458 PDF objects out of 1000 (max. 8388607)
+ 87 named destinations out of 1000 (max. 500000)
+ 201 words of extra memory for PDF output out of 10000 (max. 10000000)
+>>>>>>> 52ab791... Apply small changes to be consistent w/ code
 
