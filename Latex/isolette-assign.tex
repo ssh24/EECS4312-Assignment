@@ -472,10 +472,19 @@ Below are the function tables for each of the controlled variables:\\
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \newpage
 \section{Validation}
-\hl{To be Done.} 
-Proof of completeness and disjointness and validation of the requirements using PVS.
 
-Include the PVS sources in the appendix to this document but summarize the proofs here.
+The PVS Proof Validation in section ~\ref{pvs_val} outlines the proof summary of completeness and disjointness and validation of the requirements using PVS. There are a total of 26 formulas which has been generated and proved.\\
+
+\begin{mylist}
+\item \textbf{mode\_ft}: There are 5 TCC's generated and proved for the \emph{mode\_ft} function table. The proofs validate the disjointness and completeness of the function table to verify the requirements.
+\item \textbf{heat\_control\_ft}: There are 3 TCC's generated and proved for the \emph{heat\_control\_ft} function table. The proofs validate the disjointness and completeness of the function table to verify the requirements.
+\item \textbf{temperature\_display\_ft}: There are 3 TCC's generated and proved for the \emph{temperature\_display\_ft} function table. The proofs validate the disjointness and completeness of the function table to verify the requirements.
+\item \textbf{alarm\_ft}: There are 5 TCC's generated and proved for the \emph{alarm\_ft} function table. The proofs validate the disjointness and completeness of the function table to verify the requirements.
+\item \textbf{spec\_inv\_holds}: This provides the proof of the specification implying the invariant. Specification is the conjunction of all function tables which should imply the invariants are true at all time.
+\item \textbf{usecase1 - usecase5}: This provides the proof for all the five different use cases.
+\end{mylist}
+
+
 
 %%%%%%%%%%%
 \newpage
@@ -990,5 +999,17 @@ Below are the additional use cases in PVS logic used to validate the specificati
     	IMPLIES
     	c_td(3) = 98
 \end{pvs}
+
+\section{PVS Proof Validation} \label{pvs_val}
+
+Below is the proof of completeness and disjointness and validation of the requirements using PVS:
+
+\begin{figure}[!htb]
+\begin{center}
+\includegraphics{images/proof.png}
+\end{center}
+\caption{PVS Proof Validation}
+\label{fig:proof}
+\end{figure}
 
 \end{document}  

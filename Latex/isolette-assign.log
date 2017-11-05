@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2016.2.3)  5 NOV 2017 14:20
+=======
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2016.2.3)  5 NOV 2017 15:00
+>>>>>>> ab3b924... Add PVS Proof Validation
 entering extended mode
 **./isolette-assign.tex
 (isolette-assign.tex
@@ -1230,15 +1234,11 @@ File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
 
 
 {C:/Users/SadmanSakib/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}] [2] (
-isolette-assign.toc)
+isolette-assign.toc [3])
 \tf@toc=\write5
 \openout5 = `isolette-assign.toc'.
 
- [3] (isolette-assign.lof
-
-LaTeX Warning: Citation `JM2007' on page 4 undefined on input line 2.
-
-)
+ (isolette-assign.lof)
 \tf@lof=\write6
 \openout6 = `isolette-assign.lof'.
 
@@ -1246,59 +1246,35 @@ LaTeX Warning: Citation `JM2007' on page 4 undefined on input line 2.
 \tf@lot=\write7
 \openout7 = `isolette-assign.lot'.
 
- [4]
 
-LaTeX Warning: Citation `REMH' on page 5 undefined on input line 77.
-
-<images/isolette.png, id=188, 495.8525pt x 634.37pt>
+[4] <images/isolette.png, id=198, 495.8525pt x 634.37pt>
 File: images/isolette.png Graphic file (type png)
- <use images/isolette.png>
+
+<use images/isolette.png>
 Package pdftex.def Info: images/isolette.png used on input line 81.
 (pdftex.def)             Requested size: 177.42868pt x 226.98882pt.
-
-[5 <./images/isolette.png>]
-<images/incubator.png, id=199, 1437.37pt x 714.67pt>
+ [5 <./images/isolette.png>]
+<images/incubator.png, id=210, 1437.37pt x 714.67pt>
 File: images/incubator.png Graphic file (type png)
 
 <use images/incubator.png>
 Package pdftex.def Info: images/incubator.png used on input line 92.
 (pdftex.def)             Requested size: 399.21791pt x 198.4923pt.
-
-
-LaTeX Warning: Citation `JM2007' on page 6 undefined on input line 94.
-
-
-LaTeX Warning: Citation `JM2007' on page 6 undefined on input line 94.
-
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 103.
-[6 <./images/incubator.png>]
-<images/context-diagram.pdf, id=207, 614.295pt x 794.97pt>
+ [6 <./images/incubator.png>]
+<images/context-diagram.pdf, id=219, 614.295pt x 794.97pt>
 File: images/context-diagram.pdf Graphic file (type pdf)
 
 <use images/context-diagram.pdf>
 Package pdftex.def Info: images/context-diagram.pdf used on input line 116.
 (pdftex.def)             Requested size: 354.86412pt x 459.23912pt.
- [7 <./images/context-diagram.pdf>]
-
-LaTeX Warning: Citation `REMH' on page 8 undefined on input line 127.
-
-
-LaTeX Warning: Citation `REMH' on page 8 undefined on input line 127.
-
-[8]
-
-LaTeX Warning: Citation `REMH' on page 9 undefined on input line 152.
-
-
-LaTeX Warning: Citation `REMH' on page 9 undefined on input line 152.
-
-
+ [7 <./images/context-diagram.pdf>] [8]
 Overfull \hbox (54.8514pt too wide) in paragraph at lines 158--167
 [][] 
  []
 
-[9] <images/mode-statechart.pdf, id=245, 469.755pt x 287.0725pt>
+[9] <images/mode-statechart.pdf, id=261, 469.755pt x 287.0725pt>
 File: images/mode-statechart.pdf Graphic file (type pdf)
 
 <use images/mode-statechart.pdf>
@@ -1576,18 +1552,24 @@ Overfull \hbox (52.49167pt too wide) in paragraph at lines 454--467
  [] 
  []
 
-[22] [23]
-Underfull \hbox (badness 10000) in paragraph at lines 484--485
+[22]
+Underfull \hbox (badness 10000) in paragraph at lines 476--477
+
+ []
+
+[23]
+Underfull \hbox (badness 10000) in paragraph at lines 493--494
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 487--488
+Underfull \hbox (badness 10000) in paragraph at lines 496--497
 
  []
 
 (lstlang0.sty)
 LaTeX Font Info:    Font shape `OT1/pcr/bx/n' in size <10.95> not available
+<<<<<<< HEAD
 (Font)              Font shape `OT1/pcr/b/n' tried instead on input line 491.
  [24]
 Underfull \hbox (badness 10000) in paragraph at lines 515--516
@@ -1603,28 +1585,51 @@ Underfull \hbox (badness 10000) in paragraph at lines 518--519
 No file isolette-assign.bbl.
 [26]
 Underfull \hbox (badness 10000) in paragraph at lines 566--567
+=======
+(Font)              Font shape `OT1/pcr/b/n' tried instead on input line 500.
+ [24] [25] (isolette-assign.bbl) [26]
+Underfull \hbox (badness 10000) in paragraph at lines 545--546
+>>>>>>> ab3b924... Add PVS Proof Validation
 
  []
 
 [27]
+<<<<<<< HEAD
 Underfull \hbox (badness 10000) in paragraph at lines 597--598
+=======
+Underfull \hbox (badness 10000) in paragraph at lines 576--577
+>>>>>>> ab3b924... Add PVS Proof Validation
 
  []
 
 LaTeX Font Info:    Font shape `OT1/pcr/m/it' in size <10.95> not available
+<<<<<<< HEAD
 (Font)              Font shape `OT1/pcr/m/sl' tried instead on input line 600.
 [28] [29]
 Overfull \hbox (3.18513pt too wide) in paragraph at lines 701--702
+=======
+(Font)              Font shape `OT1/pcr/m/sl' tried instead on input line 579.
+[28] [29]
+Overfull \hbox (3.18513pt too wide) in paragraph at lines 680--681
+>>>>>>> ab3b924... Add PVS Proof Validation
 [][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
 [30] [31]
+<<<<<<< HEAD
 Overfull \hbox (3.18513pt too wide) in paragraph at lines 780--781
+=======
+Overfull \hbox (3.18513pt too wide) in paragraph at lines 759--760
+>>>>>>> ab3b924... Add PVS Proof Validation
 [][][][][][][][][][][][][][][][][][][][][] 
  []
 
 
+<<<<<<< HEAD
 Overfull \hbox (3.18513pt too wide) in paragraph at lines 782--783
+=======
+Overfull \hbox (3.18513pt too wide) in paragraph at lines 761--762
+>>>>>>> ab3b924... Add PVS Proof Validation
 [][][][][][][][][][][][][][][] 
  []
 
@@ -1636,61 +1641,97 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [33]
 [34] [35]
+<<<<<<< HEAD
 Underfull \hbox (badness 10000) in paragraph at lines 913--914
+=======
+Underfull \hbox (badness 10000) in paragraph at lines 892--893
+>>>>>>> ab3b924... Add PVS Proof Validation
 
  []
 
 [36]
+<<<<<<< HEAD
 Underfull \hbox (badness 10000) in paragraph at lines 955--956
+=======
+Underfull \hbox (badness 10000) in paragraph at lines 934--935
 
  []
 
+<images/proof.png, id=834, 497.60907pt x 322.20375pt>
+File: images/proof.png Graphic file (type png)
+ <use images/proof.png>
+Package pdftex.def Info: images/proof.png used on input line 979.
+(pdftex.def)             Requested size: 497.60785pt x 322.20296pt.
+>>>>>>> ab3b924... Add PVS Proof Validation
+
+Overfull \hbox (54.02937pt too wide) in paragraph at lines 979--980
+ [] 
+ []
+
+<<<<<<< HEAD
 [37]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 994.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 994.
  (isolette-assign.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 994.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 994.
+=======
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [37]
+[38 <./images/proof.png>]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 985.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 985.
+ (isolette-assign.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 985.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 985.
+>>>>>>> ab3b924... Add PVS Proof Validation
 Package rerunfilecheck Info: File `isolette-assign.out' has not changed.
-(rerunfilecheck)             Checksum: 71CBAA49A532767C75EE9867B33BE2A2;1515.
+(rerunfilecheck)             Checksum: 796AF36E63956528D2CF819BBF3AE0C3;1573.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
-
-LaTeX Warning: There were undefined references.
-
  ) 
 Here is how much of TeX's memory you used:
  30499 strings out of 493634
+<<<<<<< HEAD
  579037 string characters out of 3132792
  734484 words of memory out of 3000000
  32921 multiletter control sequences out of 15000+200000
  22439 words of font info for 83 fonts, out of 3000000 for 9000
+=======
+ 578916 string characters out of 3132792
+ 734636 words of memory out of 3000000
+ 32928 multiletter control sequences out of 15000+200000
+ 21823 words of font info for 81 fonts, out of 3000000 for 9000
+>>>>>>> ab3b924... Add PVS Proof Validation
  1025 hyphenation exceptions out of 8191
  81i,21n,75p,10444b,1752s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Users/SadmanSakib/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/fontn
 ame/8r.enc}<C:/Users/SadmanSakib/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/
 public/amsfonts/cm/cmbsy10.pfb><C:/Users/SadmanSakib/AppData/Local/Programs/MiK
-TeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/SadmanSakib/AppData
-/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/
+TeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/SadmanSakib/AppData
+/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/
 SadmanSakib/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cm
-mi10.pfb><C:/Users/SadmanSakib/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/pu
-blic/amsfonts/cm/cmmi12.pfb><C:/Users/SadmanSakib/AppData/Local/Programs/MiKTeX
- 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/SadmanSakib/AppData/Loc
-al/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/Sadma
-nSakib/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr17.p
-fb><C:/Users/SadmanSakib/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/a
-msfonts/cm/cmr7.pfb><C:/Users/SadmanSakib/AppData/Local/Programs/MiKTeX 2.9/fon
-ts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/SadmanSakib/AppData/Local/Progra
-ms/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsl10.pfb><C:/Users/SadmanSakib/A
-ppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmss12.pfb><C:/
-Users/SadmanSakib/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts
-/cm/cmssbx10.pfb><C:/Users/SadmanSakib/AppData/Local/Programs/MiKTeX 2.9/fonts/
-type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/SadmanSakib/AppData/Local/Program
-s/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Users/SadmanSakib/App
-Data/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Use
+mi12.pfb><C:/Users/SadmanSakib/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/pu
+blic/amsfonts/cm/cmr10.pfb><C:/Users/SadmanSakib/AppData/Local/Programs/MiKTeX 
+2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/SadmanSakib/AppData/Loca
+l/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/Sadman
+Sakib/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr7.pfb
+><C:/Users/SadmanSakib/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/ams
+fonts/cm/cmr8.pfb><C:/Users/SadmanSakib/AppData/Local/Programs/MiKTeX 2.9/fonts
+/type1/public/amsfonts/cm/cmsl10.pfb><C:/Users/SadmanSakib/AppData/Local/Progra
+ms/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmss12.pfb><C:/Users/SadmanSakib/A
+ppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmssbx10.pfb><C
+:/Users/SadmanSakib/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfon
+ts/cm/cmsy10.pfb><C:/Users/SadmanSakib/AppData/Local/Programs/MiKTeX 2.9/fonts/
+type1/public/amsfonts/cm/cmsy7.pfb><C:/Users/SadmanSakib/AppData/Local/Programs
+/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/SadmanSakib/AppD
+ata/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Use
 rs/SadmanSakib/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm
+<<<<<<< HEAD
 /cmti10.pfb><C:/Users/SadmanSakib/AppData/Local/Programs/MiKTeX 2.9/fonts/type1
 /public/amsfonts/cm/cmti12.pfb><C:/Users/SadmanSakib/AppData/Local/Programs/MiK
 TeX 2.9/fonts/type1/public/amsfonts/symbols/msbm10.pfb><C:/Users/SadmanSakib/Ap
@@ -1703,4 +1744,16 @@ PDF statistics:
  1050 PDF objects out of 1200 (max. 8388607)
  520 named destinations out of 1000 (max. 500000)
  225 words of extra memory for PDF output out of 10000 (max. 10000000)
+=======
+/cmti12.pfb><C:/Users/SadmanSakib/AppData/Local/Programs/MiKTeX 2.9/fonts/type1
+/public/amsfonts/symbols/msbm10.pfb><C:/Users/SadmanSakib/AppData/Local/Program
+s/MiKTeX 2.9/fonts/type1/urw/courier/ucrb8a.pfb><C:/Users/SadmanSakib/AppData/L
+ocal/Programs/MiKTeX 2.9/fonts/type1/urw/courier/ucrr8a.pfb><C:/Users/SadmanSak
+ib/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/courier/ucrro8a.pfb>
+Output written on isolette-assign.pdf (38 pages, 1557962 bytes).
+PDF statistics:
+ 1054 PDF objects out of 1200 (max. 8388607)
+ 511 named destinations out of 1000 (max. 500000)
+ 238 words of extra memory for PDF output out of 10000 (max. 10000000)
+>>>>>>> ab3b924... Add PVS Proof Validation
 

@@ -472,10 +472,18 @@ Below are the function tables for each of the controlled variables:\\
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \newpage
 \section{Validation}
-\hl{To be Done.} 
-Proof of completeness and disjointness and validation of the requirements using PVS.
 
-Include the PVS sources in the appendix to this document but summarize the proofs here.
+The PVS Proof Validation in section ~\ref{pvs_val} outlines the proof of completeness and disjointness and validation of the requirements using PVS. There are a total of 26 formulas which has been generated and proved.
+
+\begin{mylist}
+\item \textbf{mode\_ft}: There are 5 TCC's generated and proved for the \emph{mode\_ft} function table. The proofs validate the disjointness and completeness of the function table to verify the requirements.
+\item \textbf{heat\_control\_ft}: There are 3 TCC's generated and proved for the \emph{heat\_control\_ft} function table. The proofs validate the disjointness and completeness of the function table to verify the requirements.
+\item \textbf{temperature\_display\_ft}: There are 3 TCC's generated and proved for the \emph{temperature\_display\_ft} function table. The proofs validate the disjointness and completeness of the function table to verify the requirements.
+\item \textbf{alarm\_ft}: There are 5 TCC's generated and proved for the \emph{alarm\_ft} function table. The proofs validate the disjointness and completeness of the function table to verify the requirements.
+\item \textbf{spec\_inv\_holds}: This proves that the specification implies invariant. Specification is the conjunction of all function tables which should There are 5 TCC's generated and proved for the \emph{alarm\_ft} function table. The proofs validate the disjointness and completeness of the function table to verify the requirements.
+\end{mylist}
+
+
 
 %%%%%%%%%%%
 \newpage
@@ -485,6 +493,7 @@ The following use case is defined informally and then formally using logic in PV
 
 
 a) \textbf{Informal}: Assume the Isolette is switched on and an infant has already been placed in the incubator. The Isolette is in the normal mode and certainly the current temperature drops below the lower alarm temperature without any other fault in the sensors. Then the alarm should become \textbf{activated} and the message displayed to the the nurse should indicate the the Isolette is too cool.\\
+<<<<<<< HEAD
 
 b) \textbf{Formal}: Below is the PVS conjecture for the above use case:
 \begin{pvs}
@@ -504,6 +513,27 @@ b) \textbf{Formal}: Below is the PVS conjecture for the above use case:
      	AND c_md(3) = c_md(2) 	
 \end{pvs}
 
+=======
+
+b) \textbf{Formal}: Below is the PVS conjecture for the above use case:
+\begin{pvs}
+  usecase4: CONJECTURE
+        c_md(2) = normal 
+        AND m_sw(3) = on 
+        AND m_tm(3) = 90
+     	AND m_al(3) = 93 
+     	AND m_ah(3) = 103 
+     	AND NOT (m_st(3) = invalid)
+     	AND alarm_ft(3) 
+     	AND message_ft(3) 
+     	AND mode_ft(3)
+     	IMPLIES 
+     	c_al(3) = on 
+     	AND c_ms(3) = too_cool_alarm 
+     	AND c_md(3) = c_md(2) 	
+\end{pvs}
+
+>>>>>>> ab3b924... Add PVS Proof Validation
 \smallskip
 \noindent Refer to section ~\ref{auc} for additional use cases.
 
@@ -606,6 +636,7 @@ Isolette[delta: posreal]: THEORY
 
   % variable
   i: VAR DTIME
+<<<<<<< HEAD
 
   % types
   CURRENT_TEMPERATURE: TYPE = {n: real | n >= 68.0 AND n <= 105.0}
@@ -627,6 +658,29 @@ Isolette[delta: posreal]: THEORY
 
   SWITCH: TYPE = {on, off}
 
+=======
+
+  % types
+  CURRENT_TEMPERATURE: TYPE = {n: real | n >= 68.0 AND n <= 105.0}
+        CONTAINING 68.0
+
+  DESIRED_LOW_TEMP: TYPE = {n: integer | n >= 97 AND n <= 99} 
+  		CONTAINING 97
+
+  DESIRED_HIGH_TEMP: TYPE = {n: integer | n >= 98 AND n <= 100} 
+  		CONTAINING 98
+
+  ALARM_LOW_TEMP: TYPE = {n: integer | n >= 93 AND n <= 98} 
+  		CONTAINING 94
+
+  ALARM_HIGH_TEMP: TYPE = {n: integer | n >= 99 AND n <= 103} 
+  		CONTAINING 100
+
+  STATUS: TYPE = {valid, invalid}
+
+  SWITCH: TYPE = {on, off}
+
+>>>>>>> ab3b924... Add PVS Proof Validation
   HEAT_CONTROL: TYPE = {on, off}
 
   DISPLAYED_TEMPERATURE: TYPE =
@@ -990,5 +1044,17 @@ Below are the additional use cases in PVS logic used to validate the specificati
     	IMPLIES
     	c_td(3) = 98
 \end{pvs}
+
+\section{PVS Proof Validation} \label{pvs_val}
+
+Below is the proof of completeness and disjointness and validation of the requirements using PVS:
+
+\begin{figure}[!htb]
+\begin{center}
+\includegraphics{images/proof.png}
+\end{center}
+\caption{PVS Proof Validation}
+\label{fig:proof}
+\end{figure}
 
 \end{document}  
