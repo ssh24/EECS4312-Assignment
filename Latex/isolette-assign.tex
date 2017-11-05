@@ -512,7 +512,37 @@ b) \textbf{Formal}: Below is the PVS conjecture for the above use case:
 \newpage
 \section{Acceptance Tests}
 
-In this section, the use cases have to be converted into precise acceptance tests (using the function table to describe pre/post conditions) to be run when the design and implementation are complete. \hl{Describe one acceptance test}
+The acceptance test below describe the use case in the previous section:\\
+
+\smallskip
+\noindent \textbf{Description}: The Acceptance Test shall validate that at any given time \emph{t} such that $t > 0$ and if the Current Temperature inside the Isolette has dropped below the Lower Alarm Temperature Range then the Alarm should be activated and an adequate message of the situation should be displayed to the nurse.\\
+
+\smallskip
+\noindent \textbf{Pre-condition}: 
+\begin{pvs}
+	t > 0
+	AND c_md(t-1) = normal 
+	AND m_sw(t) = on 
+	AND m_tm(t) = 90
+	AND m_al(t) = 93 
+	AND m_ah(t) = 103 
+\end{pvs}
+
+\smallskip
+\noindent \textbf{Action}: 
+\begin{pvs}
+	alarm_ft(t)
+	AND message_ft(t) 
+	AND mode_ft(t) 
+\end{pvs}
+
+\smallskip
+\noindent \textbf{Post-condition}: 
+\begin{pvs}
+	c_al(t) = on 
+	AND c_ms(t) = too_cool_alarm 
+	AND c_md(t) = c_md(2)  
+\end{pvs}
 
 %%%%%%%%%%%%%%%%%
 \newpage
