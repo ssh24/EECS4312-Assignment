@@ -246,17 +246,50 @@ On the next page, you must add the next three most important R-Descriptions. Pro
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \newpage
 \section{E-descriptions}
+
+The following are the environmental assumption made on the Isolette System:
+
 \edescription
 {The current temperature received from the sensor is a a real number in the range $68.0$ to $105.0 \degree{F}$.\\}
-{??}
+{The monitored variable \emph{m\_tm} in Table ~\ref{table:monitored} specifies the range, type and unit for the Current Temperature received from the sensor.}
 \label{E1}
 
-\reqm{ENV}
+\smallskip
+\noindent \textbf{Rationale}: This is the specified range of operation of the Isolette. The lower end of this range is useful for monitoring an Isolette that is warming to the Desired Temperature Range. The upper end is set to be greater than the Higher Alarm Temperature.
+
+\edescription
 {The desired and alarm temperatures received from the operator are all in increments of $1 \degree{F}$.\\}
-{\hl{Refer to the relevant tables of monitored and/or controlled variables and function tables.}}
+{The monitored variables \emph{m\_tm}, \emph{m\_dl}, \emph{m\_dh}, \emph{m\_al} and \emph{m\_ah} set in an increment of $1 \degree{F}$. Refer to table ~\ref{table:monitored} to see details about the monitored inputs.}
 \label{E2}
 
-\hl{Provide the next 3 most important E-descriptions on this page. The the rest in the appendix.}
+\smallskip
+\noindent \textbf{Rationale}: Marketing studies have shown that customers prefer to set temperatures in 1 degree increments. A resolution 1°F is sufficient to be consistent with the functionality and performance for the Isolette.
+
+\edescription
+{The Lower Alarm Temperature will always be $ >= 93\degree{F}$.\\}
+{The monitored variables \emph{m\_al} denotes the Lower Alarm Temperature. Table ~\ref{table:monitored} specifies the range, type and unit for the Lower Alarm Temperature set by the Nurse.}
+\label{E3}
+
+\smallskip
+\noindent \textbf{Rationale}: Exposure to temperatures less than $93\degree{F}$ will result in hypothermia, which can lead to death within a few minutes for severely ill pre-term infants.
+
+\edescription
+{The Higher Alarm Temperature will always be $ <= 103\degree{F}$.\\}
+{The monitored variables \emph{m\_ah} denotes the Higher Alarm Temperature. Table ~\ref{table:monitored} specifies the range, type and unit for the Higher Alarm Temperature set by the Nurse.}
+\label{E4}
+
+\smallskip
+\noindent \textbf{Rationale}: Exposure to temperatures greater than $103\degree{F}$ will result in hyperthermia, which can lead to cardiac arrhythmias and febrile seizures within a few minutes.
+
+\edescription
+{The Lower Desired Temperature will always be $ >= 97\degree{F}$.\\}
+{The monitored variables \emph{m\_dh} denotes the Lower Desired Temperature. Table ~\ref{table:monitored} specifies the range, type and unit for the Lower Desired Temperature set by the Nurse.}
+\label{E5}
+
+\smallskip
+\noindent \textbf{Rationale}: Exposing the Infant to temperatures lower than $97\degree{F}$ may result in excessive heat loss and drop in heart rate secondary to metabolic acidosis.
+
+
 %%%%%%%%%%%%%%%%
 \newpage
 \section{Abstract variables needed for the Function Table}
