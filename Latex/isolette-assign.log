@@ -1,8 +1,4 @@
-<<<<<<< HEAD
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2016.2.3)  4 NOV 2017 19:25
-=======
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2016.2.3)  4 NOV 2017 22:37
->>>>>>> 52ab791... Apply small changes to be consistent w/ code
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2016.2.3)  5 NOV 2017 13:33
 entering extended mode
 **./isolette-assign.tex
 (isolette-assign.tex
@@ -1112,29 +1108,7 @@ Package caption Info: KOMA-Script document class.
 \c@ContinuedFloat=\count183
 Package caption Info: hyperref package is loaded.
 Package caption Info: listings package is loaded.
-) (isolette-assign.aux
-
-LaTeX Warning: Label `tbl:cv' multiply defined.
-
-
-LaTeX Warning: Label `tbl:cv' multiply defined.
-
-
-LaTeX Warning: Label `tbl:cv' multiply defined.
-
-
-LaTeX Warning: Label `tbl:cv' multiply defined.
-
-
-LaTeX Warning: Label `tbl:cv' multiply defined.
-
-
-LaTeX Warning: Label `tbl:cv' multiply defined.
-
-
-LaTeX Warning: Label `tbl:cv' multiply defined.
-
-)
+) (isolette-assign.aux)
 \openout1 = `isolette-assign.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 25.
@@ -1341,243 +1315,284 @@ Underfull \hbox (badness 10000) in paragraph at lines 196--196
  []
 
 
-LaTeX Warning: Reference `fig:sc' on page 11 undefined on input line 196.
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 196--196
 []\OT1/cmr/m/n/10 See stat-e-chart in
  []
 
 
-Underfull \hbox (badness 1052) in paragraph at lines 201--201
+Underfull \hbox (badness 1052) in paragraph at lines 210--210
 []\OT1/cmr/m/n/12 In the \OT1/cmr/m/it/12 nor-mal \OT1/cmr/m/n/12 mode, the tem
 -
  []
 
 
-Underfull \hbox (badness 3965) in paragraph at lines 201--201
+Underfull \hbox (badness 3965) in paragraph at lines 210--210
 \OT1/cmr/m/n/12 cur-rent tem-per-a-ture in-side the
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 201--201
+Underfull \hbox (badness 10000) in paragraph at lines 210--210
 
  []
 
 
-Underfull \hbox (badness 7433) in paragraph at lines 201--201
+Underfull \hbox (badness 7433) in paragraph at lines 210--210
 []\OT1/cmr/m/n/10 The \OT1/cmr/m/it/10 de-sired \OT1/cmr/m/n/10 tem-
  []
 
 
-Underfull \hbox (badness 8056) in paragraph at lines 201--201
+Underfull \hbox (badness 8056) in paragraph at lines 210--210
 \OT1/cmr/m/n/10 per-a-ture range is
  []
 
-
-Underfull \hbox (badness 1264) in paragraph at lines 227--227
+[11]
+Underfull \hbox (badness 1264) in paragraph at lines 236--236
 \OT1/cmr/m/n/12 out-side the \OT1/cmr/m/it/12 alarm \OT1/cmr/m/n/12 tem-per-
  []
 
 
-Underfull \hbox (badness 4378) in paragraph at lines 227--227
+Underfull \hbox (badness 4378) in paragraph at lines 236--236
 []\OT1/cmr/m/n/10 Monitored vari-able
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 227--227
-\OT1/cmr/m/it/10 m[]st \OT1/cmr/m/n/10 shows ``in-
+Underfull \hbox (badness 7397) in paragraph at lines 236--236
+\OT1/cmr/m/it/10 m[]st \OT1/cmr/m/n/10 in Ta-ble []1[]
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 227--227
-\OT1/cmr/m/n/10 the in-put sig-nals
- []
-
-[11]
-Underfull \hbox (badness 10000) in paragraph at lines 237--237
-
+Underfull \hbox (badness 10000) in paragraph at lines 236--236
+\OT1/cmr/m/n/10 shows ``in-valid''
  []
 
 
-Underfull \hbox (badness 2096) in paragraph at lines 237--237
-[][]\OT1/cmr/m/n/10 Re[]-[]fer[] [][][]to[] [][][]the[] [][][]rel[]-[]e[]-
+Underfull \hbox (badness 5008) in paragraph at lines 236--236
+\OT1/cmr/m/n/10 when any of the
  []
 
 
-Underfull \hbox (badness 1584) in paragraph at lines 237--237
-[]\OT1/cmr/m/n/10 i[]-[]tored[] [][][]and/or[] [][][]con[]-
- []
-
-[12] [13]
-Underfull \hbox (badness 10000) in paragraph at lines 254--254
+Underfull \hbox (badness 10000) in paragraph at lines 248--248
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 254--254
+Underfull \hbox (badness 2875) in paragraph at lines 248--248
+\OT1/cmr/m/n/10 ting \OT1/cmr/m/it/10 m[]sw \OT1/cmr/m/n/10 to off.
+ []
+
+
+Underfull \hbox (badness 6094) in paragraph at lines 248--248
+\OT1/cmr/m/n/10 The alarm con-di-
+ []
+
+
+Underfull \hbox (badness 1158) in paragraph at lines 248--248
+\OT1/cmr/m/n/10 has been ac-ti-vated
+ []
+
+
+Underfull \hbox (badness 2717) in paragraph at lines 248--248
+\OT1/cmr/m/n/10 for more than 10
+ []
+
+Missing character: There is no â in font cmr12!
+Missing character: There is no € in font cmr12!
+Missing character: There is no ™ in font cmr12!
+[12]
+Missing character: There is no Â in font cmr12!
+Missing character: There is no ° in font cmr12!
+Missing character: There is no Â in font cmr12!
+Missing character: There is no ° in font cmr12!
+
+Underfull \hbox (badness 3471) in paragraph at lines 256--256
+[]\OT1/cmr/m/n/10 When the cur-rent
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 256--256
+\OT1/cmr/m/n/10 tem-per-a-ture is
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 256--256
+\OT1/cmr/m/n/10 be-tween +/-0.5
+ []
+
+
+Underfull \hbox (badness 1292) in paragraph at lines 256--256
+\OT1/cmr/m/n/10 of the alarm tem-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 256--256
+\OT1/cmr/m/n/10 per-a-ture range,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 256--256
+$\OML/cmm/m/it/10 m[]al \OT1/cmr/m/n/10 + 0\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 5 
+\OML/cmm/m/it/10 <\OT1/cmr/m/n/10 =$
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 256--256
+$\OML/cmm/m/it/10 m[]tm <\OT1/cmr/m/n/10 =$
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 264--264
+[]\OT1/cmr/m/n/10 The heat con-trol
+ []
+
+
+Underfull \hbox (badness 4699) in paragraph at lines 264--264
+\OT1/cmr/m/n/10 of the Iso-lette is
+ []
+
+[13] [14]
+Underfull \hbox (badness 10000) in paragraph at lines 286--286
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 286--286
 []\OT1/cmr/m/n/10 The mon-i-tored
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 254--254
+Underfull \hbox (badness 10000) in paragraph at lines 286--286
 \OT1/cmr/m/n/10 vari-able \OT1/cmr/m/it/10 m[]tm \OT1/cmr/m/n/10 in
  []
 
 
-Underfull \hbox (badness 2269) in paragraph at lines 254--254
+Underfull \hbox (badness 2269) in paragraph at lines 286--286
 \OT1/cmr/m/n/10 Ta-ble  []1[] spec-i-fies
  []
 
 
-Underfull \hbox (badness 2717) in paragraph at lines 254--254
+Underfull \hbox (badness 2717) in paragraph at lines 286--286
 \OT1/cmr/m/n/10 unit for the Cur-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 254--254
+Underfull \hbox (badness 10000) in paragraph at lines 286--286
 \OT1/cmr/m/n/10 rent Tem-per-a-ture
  []
 
 
-Underfull \hbox (badness 5681) in paragraph at lines 254--254
+Underfull \hbox (badness 5681) in paragraph at lines 286--286
 \OT1/cmr/m/n/10 re-ceived from the
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 262--262
+Underfull \hbox (badness 10000) in paragraph at lines 294--294
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 262--262
+Underfull \hbox (badness 10000) in paragraph at lines 294--294
 []\OT1/cmr/m/n/10 The mon-i-tored
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 262--262
+Underfull \hbox (badness 10000) in paragraph at lines 294--294
 \OT1/cmr/m/n/10 vari-ables \OT1/cmr/m/it/10 m[]tm\OT1/cmr/m/n/10 ,
  []
 
 
-Underfull \hbox (badness 4518) in paragraph at lines 262--262
+Underfull \hbox (badness 4518) in paragraph at lines 294--294
 \OT1/cmr/m/it/10 m[]dl\OT1/cmr/m/n/10 , \OT1/cmr/m/it/10 m[]dh\OT1/cmr/m/n/10 ,
  \OT1/cmr/m/it/10 m[]al
  []
 
 
-Underfull \hbox (badness 4660) in paragraph at lines 262--262
+Underfull \hbox (badness 4660) in paragraph at lines 294--294
 \OT1/cmr/m/n/10 in-cre-ment of $1[]F$.
  []
 
 Missing character: There is no Â in font cmr12!
 Missing character: There is no ° in font cmr12!
 
-Underfull \hbox (badness 2158) in paragraph at lines 270--270
+Underfull \hbox (badness 2158) in paragraph at lines 302--302
 []\OT1/cmr/m/n/12 The Lower Alarm Tem-per-a-ture
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 270--270
+Underfull \hbox (badness 10000) in paragraph at lines 302--302
 
  []
 
 
-Underfull \hbox (badness 7963) in paragraph at lines 270--270
+Underfull \hbox (badness 7963) in paragraph at lines 302--302
 \OT1/cmr/m/n/10 the Lower Alarm
  []
 
-[14]
-Underfull \hbox (badness 1067) in paragraph at lines 278--278
+[15]
+Underfull \hbox (badness 1067) in paragraph at lines 310--310
 []\OT1/cmr/m/n/12 The Higher Alarm Tem-per-a-ture
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 278--278
+Underfull \hbox (badness 10000) in paragraph at lines 310--310
 
  []
 
 
-Underfull \hbox (badness 4024) in paragraph at lines 278--278
+Underfull \hbox (badness 4024) in paragraph at lines 310--310
 \OT1/cmr/m/n/10 the Higher Alarm
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 286--286
+Underfull \hbox (badness 10000) in paragraph at lines 318--318
 
  []
 
 
-Underfull \hbox (badness 2073) in paragraph at lines 286--286
+Underfull \hbox (badness 2073) in paragraph at lines 318--318
 \OT1/cmr/m/n/10 the Lower De-sired
  []
 
-<<<<<<< HEAD
-[15] [16]
-
-LaTeX Font Warning: Font shape `OT1/cmss/bx/it' undefined
-(Font)              using `OT1/cmss/bx/n' instead on input line 306.
-
-[17] [18]
-
-LaTeX Warning: Citation `REMH' on page 19 undefined on input line 322.
-
-[19] [20]
-No file isolette-assign.bbl.
-[21] (lstlang0.sty)
-LaTeX Font Info:    Font shape `OT1/pcr/bx/n' in size <10.95> not available
-(Font)              Font shape `OT1/pcr/b/n' tried instead on input line 352.
-LaTeX Font Info:    Font shape `OT1/pcr/m/it' in size <10.95> not available
-(Font)              Font shape `OT1/pcr/m/sl' tried instead on input line 354.
- [22]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 364.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 364.
- (isolette-assign.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 364.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 364.
-=======
-[14] [15]
-Underfull \hbox (badness 10000) in paragraph at lines 270--271
+[16] [17]
+Underfull \hbox (badness 10000) in paragraph at lines 335--336
 
  []
 
 
 LaTeX Font Warning: Font shape `OT1/cmss/bx/it' undefined
-(Font)              using `OT1/cmss/bx/n' instead on input line 272.
+(Font)              using `OT1/cmss/bx/n' instead on input line 337.
 
 
-Overfull \hbox (10.42653pt too wide) in paragraph at lines 276--290
+Overfull \hbox (10.42653pt too wide) in paragraph at lines 341--355
  [][] 
  []
 
-[16]
-Overfull \hbox (23.68083pt too wide) in paragraph at lines 313--324
+[18]
+Overfull \hbox (23.68083pt too wide) in paragraph at lines 378--389
  [][] 
  []
 
-[17] [18] [19]
-Overfull \hbox (52.49167pt too wide) in paragraph at lines 389--402
+[19] [20] [21]
+Overfull \hbox (52.49167pt too wide) in paragraph at lines 454--467
  [] 
  []
 
-[20] [21]
-
-LaTeX Warning: Citation `REMH' on page 22 undefined on input line 419.
-
 [22] [23]
+
+LaTeX Warning: Citation `REMH' on page 24 undefined on input line 484.
+
+[24] [25]
 No file isolette-assign.bbl.
-[24] (lstlang0.sty)
+[26] (lstlang0.sty)
 LaTeX Font Info:    Font shape `OT1/pcr/bx/n' in size <10.95> not available
-(Font)              Font shape `OT1/pcr/b/n' tried instead on input line 449.
+(Font)              Font shape `OT1/pcr/b/n' tried instead on input line 514.
 LaTeX Font Info:    Font shape `OT1/pcr/m/it' in size <10.95> not available
-(Font)              Font shape `OT1/pcr/m/sl' tried instead on input line 451.
- [25]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 461.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 461.
+(Font)              Font shape `OT1/pcr/m/sl' tried instead on input line 516.
+ [27]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 526.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 526.
  (isolette-assign.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 461.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 461.
->>>>>>> 52ab791... Apply small changes to be consistent w/ code
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 526.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 526.
 Package rerunfilecheck Info: File `isolette-assign.out' has not changed.
 (rerunfilecheck)             Checksum: 80A45BC1B79901A4B710D5B07AD0129B;1331.
 
@@ -1587,24 +1602,13 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
 LaTeX Warning: There were undefined references.
 
-
-LaTeX Warning: There were multiply-defined labels.
-
  ) 
 Here is how much of TeX's memory you used:
-<<<<<<< HEAD
- 29960 strings out of 493634
- 571255 string characters out of 3132792
- 708864 words of memory out of 3000000
- 32828 multiletter control sequences out of 15000+200000
- 21191 words of font info for 78 fonts, out of 3000000 for 9000
-=======
- 29979 strings out of 493634
- 571592 string characters out of 3132792
- 709802 words of memory out of 3000000
- 32834 multiletter control sequences out of 15000+200000
+ 29999 strings out of 493634
+ 571718 string characters out of 3132792
+ 711439 words of memory out of 3000000
+ 32846 multiletter control sequences out of 15000+200000
  22439 words of font info for 83 fonts, out of 3000000 for 9000
->>>>>>> 52ab791... Apply small changes to be consistent w/ code
  1025 hyphenation exceptions out of 8191
  81i,21n,75p,10444b,1105s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Users/SadmanSakib/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/fontn
@@ -1626,7 +1630,6 @@ ppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmss12.pfb><C:/
 Users/SadmanSakib/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts
 /cm/cmssbx10.pfb><C:/Users/SadmanSakib/AppData/Local/Programs/MiKTeX 2.9/fonts/
 type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/SadmanSakib/AppData/Local/Program
-<<<<<<< HEAD
 s/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Users/SadmanSakib/App
 Data/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Use
 rs/SadmanSakib/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm
@@ -1637,24 +1640,9 @@ pData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/courier/ucrb8a.pfb><C:/Users/Sa
 dmanSakib/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/courier/ucrr8a.pfb>
 <C:/Users/SadmanSakib/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/courier
 /ucrro8a.pfb>
-Output written on isolette-assign.pdf (22 pages, 1428825 bytes).
+Output written on isolette-assign.pdf (27 pages, 1457812 bytes).
 PDF statistics:
- 420 PDF objects out of 1000 (max. 8388607)
- 74 named destinations out of 1000 (max. 500000)
- 169 words of extra memory for PDF output out of 10000 (max. 10000000)
-=======
-s/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/SadmanSakib/App
-Data/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Us
-ers/SadmanSakib/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/c
-m/cmti12.pfb><C:/Users/SadmanSakib/AppData/Local/Programs/MiKTeX 2.9/fonts/type
-1/public/amsfonts/symbols/msbm10.pfb><C:/Users/SadmanSakib/AppData/Local/Progra
-ms/MiKTeX 2.9/fonts/type1/urw/courier/ucrb8a.pfb><C:/Users/SadmanSakib/AppData/
-Local/Programs/MiKTeX 2.9/fonts/type1/urw/courier/ucrr8a.pfb><C:/Users/SadmanSa
-kib/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/courier/ucrro8a.pfb>
-Output written on isolette-assign.pdf (25 pages, 1438468 bytes).
-PDF statistics:
- 458 PDF objects out of 1000 (max. 8388607)
- 87 named destinations out of 1000 (max. 500000)
+ 492 PDF objects out of 1000 (max. 8388607)
+ 95 named destinations out of 1000 (max. 500000)
  201 words of extra memory for PDF output out of 10000 (max. 10000000)
->>>>>>> 52ab791... Apply small changes to be consistent w/ code
 
