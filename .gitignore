@@ -1,1 +1,10 @@
 pvs/orphaned-proofs.prf
+Latex/*.aux
+Latex/*.ps
+Latex/*.log
+Latex/*.dvi
+Latex/*.tex~
+Latex/*.tex.bak
+Latex/*.bbl
+Latex/*.blg
+Latex/.DS_Store
