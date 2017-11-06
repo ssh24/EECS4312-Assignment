@@ -1,0 +1,23 @@
+Time[delta: posreal]: THEORY
+ BEGIN
+
+  DTIME: TYPE = nat
+
+  init(i: DTIME): bool = i = 0
+
+  RTIME: TYPE = {t: nnreal | (EXISTS (i: DTIME): t = i * delta)}
+
+  TIME: TYPE = nnreal
+
+  POS_DTIME: TYPE = posnat
+
+  r2d(t: RTIME): DTIME = t / delta
+
+  d2r(i: DTIME): RTIME = i * delta
+
+  DURATION: TYPE = nnreal
+
+  held_for(p: pred[DTIME], d: DURATION)(i: DTIME): bool =
+      (FORALL (j: int):
+         i - (d / delta) <= j AND j <= i IMPLIES 0 <= j AND p(j))
+ END Time
